@@ -19,7 +19,7 @@ torify curl -sk -u admin:admin -H "Expect:" -H "Content-Type: multipart/form-dat
 
 echo "Activate config.."
 
-torify curl -sk -u admin:admin https://185.7.66.229/actconf.cgi > /dev/null
+torify curl -sk -u admin:admin $1/actconf.cgi > /dev/null
 
 echo "Wait 10sec for output.."
 
